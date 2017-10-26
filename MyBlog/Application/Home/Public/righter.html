@@ -1,0 +1,92 @@
+<div class="col-md-4 content-right">
+        <div class="recent">
+            <div class="btn_b">
+                <button class="btn1" value="-1"><span>&lt;</span></button>
+                <button class="btn2" value="+1"><span>&gt;</span></button>
+            </div>
+            <div class="tab">
+                <table id="tip" cellspacing="0">
+                    <tr>
+                        <th colspan="7" >{$curMonth}</th>
+                    </tr>
+                    <tr class="weak">
+                        <td>周日</td>
+                        <td>周一</td>
+                        <td>周二</td>
+                        <td>周三</td>
+                        <td>周四</td>
+                        <td>周五</td>
+                        <td>周六</td>
+                    </tr>
+                    <php> 
+                    //设置一个变量,存储还剩几个格子没输出
+                    $count = 42;
+                    for ($i=0;$i<6;$i++){
+                        echo '<tr>';
+                        if($i==0&&$days['prevD']>0){
+                            if($days['prevD']==7){
+                                for($j=0;$j<count($days['prevD']);$j++){
+                                    echo '<td class="prev">';
+                                    echo $calen[$i][$j];
+                                    echo '</td>';
+                                    $count--;
+                                }
+                            } else {
+                                for($j=0;$j<$days['prevD'];$j++){
+                                    echo '<td class="prev">';
+                                    echo $calen[$i][$j];
+                                    echo '</td>';
+                                    $count--;
+                                }
+                                for(;$j<7;$j++){
+                                    echo '<td class="current">';
+                                    echo $calen[$i][$j];
+                                    echo '</td>';    
+                                    $count--;                            
+                                }
+                            }
+                        } else {
+                            if ($count == $days['nextD']){
+                                for($j=0;$j<$count;$j++){
+                                    echo '<td class="next">';
+                                    echo $calen[$i][$j];
+                                    echo '</td>';
+                                }
+                            } else {
+                                for ($j=0;$j<7;$j++){
+                                    echo '<td class="current">';
+                                    echo $calen[$i][$j];
+                                    echo '</td>';
+                                    $count--;                            
+                                }
+                            }
+                        echo '</tr>';
+                    }
+                }
+        
+            </php>
+
+                </table>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="archives">
+            <h3>ARCHIVES</h3>
+            <ul>
+            <li><a href="#">October 2013</a></li>
+            <li><a href="#">September 2013</a></li>
+            <li><a href="#">August 2013</a></li>
+            <li><a href="#">July 2013</a></li>
+            </ul>
+        </div>
+        <div class="categories">
+            <h3>CATEGORIES</h3>
+            <ul>
+            <li><a href="#">Vivamus vestibulum nulla</a></li>
+            <li><a href="#">Integer vitae libero ac risus e</a></li>
+            <li><a href="#">Vestibulum commo</a></li>
+            <li><a href="#">Cras iaculis ultricies</a></li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+     </div>

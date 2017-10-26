@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+.face {
+    margin: 5px;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+  }
+.bor {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #00aeff;
+}
+.face:hover {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #00aeff;
+}

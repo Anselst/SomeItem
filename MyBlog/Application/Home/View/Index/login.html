@@ -1,0 +1,33 @@
+<php>
+	define('HEADER',3);
+</php>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MyBlog--登录</title>
+<!-- 引入脚本和css -->
+<include file="./Application/Home/Public/link_script.html" />
+
+</head>
+<body>
+<!---header-->
+<include file="./Application/Home/Public/header.html" />
+<!--/header-->
+<div class="contact-content">
+	<div class="container">
+		<div class="contact-info">
+			<h2 style="text-align:center">登录你的账号</h2>
+		</div>
+		<div class="contact-details">				 
+			<form action="__CONTROLLER__/login_vali" method="POST">
+				<input type="text" placeholder="用户名" name="username" required/>
+				<input type="password" placeholder="密码" name="psw" required/>
+				<input type="text" style="width:20%;display:inline;" placeholder="验证码" name="yzm" required/>
+				<img src="__CONTROLLER__/yzm" class="yzm" alt="">
+				<input type="submit" value="登录"/>
+			</form>
+	  	</div>
+	</div>
+</div>
+<!---->
+<include file="./Application/Home/Public/footer.html" />

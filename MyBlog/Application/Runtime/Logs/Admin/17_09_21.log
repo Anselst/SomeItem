@@ -1,0 +1,20 @@
+[ 2017-09-21T13:00:14+08:00 ] ::1 /MyBlog/index.php/Admin/
+ERR: 1054:Unknown column 'status' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `mb_post` WHERE ( status=1 ) LIMIT 1  
+
+[ 2017-09-21T13:00:15+08:00 ] ::1 /MyBlog/index.php/Admin/
+ERR: 1054:Unknown column 'status' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `mb_post` WHERE ( status=1 ) LIMIT 1  
+
+[ 2017-09-21T17:26:14+08:00 ] ::1 /MyBlog/index.php/Admin/Index/save
+ERR: 模板不存在:./Application/Admin/View/Index/save.html
+
+[ 2017-09-21T17:27:20+08:00 ] ::1 /MyBlog/index.php/Admin/Index/save
+ERR: 模板不存在:./Application/Admin/View/Index/save.html
+
+[ 2017-09-21T18:49:32+08:00 ] ::1 /MyBlog/index.php/Admin/Index/save
+ERR: 模板不存在:./Application/Admin/View/Index/save.html
+
+[ 2017-09-21T20:00:22+08:00 ] ::1 /MyBlog/index.php/Admin/Index/del?id=1
+ERR: Think\Controller:sussec方法不存在！
+

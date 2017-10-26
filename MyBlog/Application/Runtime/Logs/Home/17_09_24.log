@@ -1,0 +1,63 @@
+[ 2017-09-24T14:28:48+08:00 ] ::1 /MyBlog/index.php/Home/Index/%7BU('reg_verify')%7D
+ERR: 非法操作:{U('reg_verify')}
+
+[ 2017-09-24T14:29:10+08:00 ] ::1 /MyBlog/index.php/Home/Index/%7BU('reg_verify')%7D
+ERR: 非法操作:{U('reg_verify')}
+
+[ 2017-09-24T14:29:11+08:00 ] ::1 /MyBlog/index.php/Home/Index/%7BU('reg_verify')%7D
+ERR: 非法操作:{U('reg_verify')}
+
+[ 2017-09-24T14:29:18+08:00 ] ::1 /MyBlog/index.php/Home/Index/%7BU('reg_verify')%7D
+ERR: 非法操作:{U('reg_verify')}
+
+[ 2017-09-24T14:48:11+08:00 ] ::1 /MyBlog/index.php/Home/Index/test
+ERR: 非法操作:test
+
+[ 2017-09-24T15:34:36+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg
+ERR: Think\Controller:check_verify方法不存在！
+
+[ 2017-09-24T15:43:50+08:00 ] ::1 /MyBlog/index.php/Home/Index/yzm(2)
+ERR: 非法操作:yzm(2)
+
+[ 2017-09-24T15:43:51+08:00 ] ::1 /MyBlog/index.php/Home/Index/yzm(2)
+ERR: 非法操作:yzm(2)
+
+[ 2017-09-24T15:43:51+08:00 ] ::1 /MyBlog/index.php/Home/Index/yzm(2)
+ERR: 非法操作:yzm(2)
+
+[ 2017-09-24T15:43:51+08:00 ] ::1 /MyBlog/index.php/Home/Index/yzm(2)
+ERR: 非法操作:yzm(2)
+
+[ 2017-09-24T15:43:51+08:00 ] ::1 /MyBlog/index.php/Home/Index/yzm(2)
+ERR: 非法操作:yzm(2)
+
+[ 2017-09-24T19:09:01+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg_vali
+ERR: 1366:Incorrect integer value: '' for column 'phone' at row 1
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`email`,`phone`,`login_id`) VALUES ('测试用户1','0','601f1889667efaebb33b8c12572835da3f027f78','','','2147483647')
+
+[ 2017-09-24T19:11:25+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg_vali
+ERR: 1366:Incorrect integer value: '' for column 'phone' at row 1
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`email`,`phone`,`login_id`) VALUES ('测试用户1','0','601f1889667efaebb33b8c12572835da3f027f78','','','2147483647')
+
+[ 2017-09-24T19:12:20+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg_vali
+ERR: 1366:Incorrect integer value: '' for column 'phone' at row 1
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`email`,`phone`,`login_id`) VALUES ('测试用户1','0','601f1889667efaebb33b8c12572835da3f027f78','','','666788743381fa1337c0e41abec20b4bd5866d8c')
+
+[ 2017-09-24T19:13:44+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg_vali
+ERR: 1366:Incorrect integer value: '' for column 'phone' at row 1
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`email`,`phone`,`login_id`) VALUES ('测试用户1','0','601f1889667efaebb33b8c12572835da3f027f78','','','666788743381fa1337c0e41abec20b4bd5866d8c')
+
+[ 2017-09-24T19:14:17+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg_vali
+ERR: 1366:Incorrect integer value: '' for column 'phone' at row 1
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`email`,`phone`,`login_id`) VALUES ('ceshi1','0','601f1889667efaebb33b8c12572835da3f027f78','','','666788743381fa1337c0e41abec20b4bd5866d8c')
+
+[ 2017-09-24T19:19:29+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg_vali
+ERR: 1062:Duplicate entry '666788743381fa1337c0e41abec20b4bd5866d8c' for key 'login_id'
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`email`,`phone`,`login_id`) VALUES ('ceshi2','0','601f1889667efaebb33b8c12572835da3f027f78','','','666788743381fa1337c0e41abec20b4bd5866d8c')
+
+[ 2017-09-24T19:54:45+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg_vali
+ERR: Think\Model:_sha1方法不存在！
+
+[ 2017-09-24T20:52:49+08:00 ] ::1 /MyBlog/index.php/Home/User
+ERR: 无法加载控制器:User
+

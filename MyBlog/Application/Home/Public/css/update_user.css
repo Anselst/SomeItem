@@ -1,0 +1,75 @@
+@charset "utf-8";
+div.main {
+    border-top: 1px solid #ddd;
+}
+div.user {
+    margin: 0 auto;
+    width: 1170px;
+    padding: 15px;
+}
+div.user table {
+    margin: 15px auto;
+}
+div.user table tr {
+    padding: 5px 0;
+}
+div.user table tr th {
+    padding: 7px 20px 7px 7px;
+    border: none;
+    background: left;
+    text-align: right;
+    /* margin: 50px; */
+}
+div.user table tr td {
+    padding: 7px 30px 7px 7px;
+    /* line-height: 67px; */
+}
+div.user table tr td img {
+    max-height: 120px;
+}
+div.user table tr td input {
+    padding-left: 5px;
+    color: #7c7c7c;
+}
+div.user table tr td input[type='text']{
+    /* border: 1px solid #ccc;
+    background: #f8f8f8; */
+    width: 200%;
+    /* margin-left: 26%; */
+    padding: 12px;
+    border: 1px solid #E2E0ED;
+    font-size: 1em;
+    /* margin-bottom: 1em; */
+    color: #333;
+    background: #fff;
+    outline: none;
+    display: block;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+}
+div.user table tr td input[type='text']:hover {
+    border: 1px solid #09f;
+}
+div.user form input.submit {
+    border: none;
+    width: 55px;
+    height: 35px;
+    background: #09f;
+    color: #fff;
+    margin-left: 50%;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+}
+div.user form input.submit:hover {
+    border: 1px solid #09f;
+    color: #09f;
+    background: #fff;
+}

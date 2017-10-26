@@ -1,0 +1,67 @@
+[ 2017-09-25T12:49:03+08:00 ] ::1 /MyBlog/index.php/Home/Public/face
+ERR: 无法加载控制器:Public
+
+[ 2017-09-25T12:49:04+08:00 ] ::1 /MyBlog/index.php/Home/Public/face
+ERR: 无法加载控制器:Public
+
+[ 2017-09-25T12:49:06+08:00 ] ::1 /MyBlog/index.php/Home/Public/face
+ERR: 无法加载控制器:Public
+
+[ 2017-09-25T12:49:07+08:00 ] ::1 /MyBlog/index.php/Home/Public/face
+ERR: 无法加载控制器:Public
+
+[ 2017-09-25T12:49:07+08:00 ] ::1 /MyBlog/index.php/Home/Public/face
+ERR: 无法加载控制器:Public
+
+[ 2017-09-25T12:49:08+08:00 ] ::1 /MyBlog/index.php/Home/Public/face
+ERR: 无法加载控制器:Public
+
+[ 2017-09-25T12:49:08+08:00 ] ::1 /MyBlog/index.php/Home/Public/face
+ERR: 无法加载控制器:Public
+
+[ 2017-09-25T12:49:08+08:00 ] ::1 /MyBlog/index.php/Home/Public/face
+ERR: 无法加载控制器:Public
+
+[ 2017-09-25T12:49:08+08:00 ] ::1 /MyBlog/index.php/Home/Public/face
+ERR: 无法加载控制器:Public
+
+[ 2017-09-25T12:49:08+08:00 ] ::1 /MyBlog/index.php/Home/Public/face
+ERR: 无法加载控制器:Public
+
+[ 2017-09-25T12:57:09+08:00 ] ::1 /MyBlog/index.php/Home/Public/
+ERR: 无法加载控制器:Public
+
+[ 2017-09-25T13:37:14+08:00 ] ::1 /MyBlog/index.php/Home/Index/test
+ERR: 模板不存在:./Application/Home/View/Index/abc.html
+
+[ 2017-09-25T13:37:57+08:00 ] ::1 /MyBlog/index.php/Home/Index/test
+ERR: 模板不存在:./Application/Home/View/Index/ac.html
+
+[ 2017-09-25T13:38:14+08:00 ] ::1 /MyBlog/index.php/Home/Index/test
+ERR: 模板不存在:./Application/Home/View/User/ac.html
+
+[ 2017-09-25T13:38:32+08:00 ] ::1 /MyBlog/index.php/Home/Index/test
+ERR: 模板不存在:./Application/Home/View/Admin/User.html
+
+[ 2017-09-25T13:38:58+08:00 ] ::1 /MyBlog/index.php/Home/Index/test
+ERR: 模板不存在:./Application/Home/View/./Application/Admin/User.html
+
+[ 2017-09-25T13:38:59+08:00 ] ::1 /MyBlog/index.php/Home/Index/test
+ERR: 模板不存在:./Application/Home/View/./Application/Admin/User.html
+
+[ 2017-09-25T17:21:25+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg_vali
+ERR: 1406:Data too long for column 'face' at row 1
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`face`,`email`,`phone`,`login_id`) VALUES ('测试11','0','601f1889667efaebb33b8c12572835da3f027f78','http://127.0.0.1/MyBlog/Application/Home/Public/images/face01.png','','','d87001607b69d0a60fc5768bb20488228d6ea329')
+
+[ 2017-09-25T19:07:29+08:00 ] ::1 /MyBlog/index.php/Home/User
+ERR: 模板不存在:./Application/Home/View/User/index.html
+
+[ 2017-09-25T19:14:42+08:00 ] ::1 /MyBlog/index.php/Home/User
+ERR: 模板不存在:./Application/Home/View/User/index.html
+
+[ 2017-09-25T19:22:18+08:00 ] ::1 /MyBlog/index.php/Home/Index/index
+ERR: Think\Controller:check_login方法不存在！
+
+[ 2017-09-25T19:28:30+08:00 ] ::1 /MyBlog/index.php/Home/User
+ERR: 模板不存在:./Application/Home/View/User/index.html
+

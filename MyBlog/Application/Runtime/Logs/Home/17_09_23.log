@@ -1,0 +1,204 @@
+[ 2017-09-23T14:25:12+08:00 ] ::1 /MyBlog/index.php/Home/Index/login
+ERR: 非法操作:login
+
+[ 2017-09-23T14:25:15+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg
+ERR: 非法操作:reg
+
+[ 2017-09-23T14:25:57+08:00 ] ::1 /MyBlog/index.php/Home/Index/login
+ERR: 模板不存在:./Application/Home/View/Index/login.html
+
+[ 2017-09-23T14:26:01+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg
+ERR: 模板不存在:./Application/Home/View/Index/reg.html
+
+[ 2017-09-23T18:50:13+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg
+ERR: 1146:Table 'myblog.mb_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mb_user`
+
+[ 2017-09-23T19:05:33+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:05:34+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:05:35+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:05:36+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:05:36+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:05:49+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:05:50+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:06:00+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:06:01+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:06:01+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:06:02+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:06:02+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:06:02+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:06:03+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:06:03+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:06:03+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:06:04+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:06:04+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:06:04+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:06:04+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:06:05+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:06:05+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:06:05+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:06:06+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:07:24+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:07:33+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:07:33+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:07:43+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:07:44+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:07:50+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?2
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:08:35+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?tm=1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:08:36+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?tm=1
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:08:57+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?tm=0.15178676544690428
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:08:58+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?tm=0.9054438857450291
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:08:58+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?tm=0.8651549476735378
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:08:58+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?tm=0.24282942070812674
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:08:59+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?tm=0.77092726513894
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:08:59+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?tm=0.29198261988631513
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:08:59+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?tm=0.3561703695126852
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:09:53+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?tm=0.591380355892507
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:09:54+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?tm=0.45901197813797556
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:09:54+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?tm=0.7241173189831385
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:09:54+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?tm=0.9420847491641067
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:09:55+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?tm=0.10399411262303682
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:09:55+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm?tm=0.32088590759213087
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:10:54+08:00 ] ::1 /MyBlog/index.php/Home/Index/__CONTROLLER__/yzm
+ERR: 非法操作:__CONTROLLER__
+
+[ 2017-09-23T19:11:39+08:00 ] ::1 /MyBlog/index.php/Home/Index/MyBlog/index.php/Home/Index/yzm
+ERR: 非法操作:MyBlog
+
+[ 2017-09-23T20:18:40+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg
+ERR: Think\Controller:getError方法不存在！
+
+[ 2017-09-23T20:58:20+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg.html
+ERR: 1264:Out of range value for column 'phone' at row 1
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`email`,`phone`) VALUES ('斯蒂芬森','0','123123','','2147483647')
+
+[ 2017-09-23T21:10:09+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg.html
+ERR: 1264:Out of range value for column 'phone' at row 1
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`email`,`phone`) VALUES ('斯蒂芬森','0','601f1889667efaebb33b8c12572835da3f027f78','','2147483647')
+
+[ 2017-09-23T21:11:27+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg.html
+ERR: 1264:Out of range value for column 'phone' at row 1
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`email`,`phone`) VALUES ('斯蒂芬森','0','601f1889667efaebb33b8c12572835da3f027f78','','2147483647')
+
+[ 2017-09-23T21:14:56+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg.html
+ERR: 1264:Out of range value for column 'phone' at row 1
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`email`,`phone`) VALUES ('斯蒂芬森','0','601f1889667efaebb33b8c12572835da3f027f78','','2147483647')
+
+[ 2017-09-23T21:17:37+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg.html
+ERR: 1264:Out of range value for column 'phone' at row 1
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`email`,`phone`) VALUES ('斯蒂芬森','0','601f1889667efaebb33b8c12572835da3f027f78','','2147483647')
+
+[ 2017-09-23T21:18:24+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg.html
+ERR: 1264:Out of range value for column 'phone' at row 1
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`email`,`phone`) VALUES ('斯蒂芬森','0','601f1889667efaebb33b8c12572835da3f027f78','','2147483647')
+
+[ 2017-09-23T21:24:42+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg.html
+ERR: 1264:Out of range value for column 'phone' at row 1
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`email`,`phone`) VALUES ('第三方斯蒂芬','1','601f1889667efaebb33b8c12572835da3f027f78','','2147483647')
+
+[ 2017-09-23T21:28:33+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg.html
+ERR: 1264:Out of range value for column 'phone' at row 1
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`email`,`phone`) VALUES ('第三方斯蒂芬','1','601f1889667efaebb33b8c12572835da3f027f78','','2147483647')
+
+[ 2017-09-23T21:30:03+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg.html
+ERR: 1264:Out of range value for column 'phone' at row 1
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`email`,`phone`) VALUES ('第三方的手','1','601f1889667efaebb33b8c12572835da3f027f78','','2147483647')
+
+[ 2017-09-23T21:33:33+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg.html
+ERR: 1264:Out of range value for column 'phone' at row 1
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`email`,`phone`) VALUES ('dsfsdfsdf','0','123123','sdfsd@qq.com','2147483647')
+
+[ 2017-09-23T21:37:00+08:00 ] ::1 /MyBlog/index.php/Home/Index/reg
+ERR: 1264:Out of range value for column 'phone' at row 1
+ [ SQL语句 ] : INSERT INTO `mb_user` (`username`,`sex`,`psw`,`email`,`phone`) VALUES ('第三方斯蒂芬森的','0','123123','sfds@qq.com','2147483647')
+

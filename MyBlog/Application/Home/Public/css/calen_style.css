@@ -1,0 +1,121 @@
+body {
+    /* background: aliceblue; */
+}
+div.tab {
+    /* margin: 0 auto; */
+    width: 280px;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-top: 0;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px #888;
+}
+table tr th {
+    width: 300px;    
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px dashed #acacac;
+    background: linear-gradient(to right,#FFE2EB,#EAF9FF);
+}
+.weak {
+    background: linear-gradient(to right,#FFE2EB,#EAF9FF);
+}
+.weadk td:first-child, .weak td:last-child {
+    width: 38px;
+    /* padding: 5px; */
+    /* color: #0f0; */
+}
+table tr td {
+    padding: 3px;
+    text-align: center;
+}
+td.prev,td.next {
+    background: #f0f0f0;
+    color: #888;
+}
+td.current {
+    color: #0000ff;
+}
+div.btn_b {
+    width: 270px;
+    margin: 0;
+    margin-left: 10px;
+
+}
+.btn1 {
+    margin: 0 88px 0 0;
+    color: #2F4FFF;
+    cursor: pointer;
+    -webkit-transition:all 0.3s; /* Safari */
+    transition:all 0.3s;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0;
+    background: linear-gradient(to right,#cdf,#cfd);
+}
+.btn1 span{
+    transition: 0.3s;
+    position: relative;
+    top: 0;
+    right: 0px;
+}
+.btn1 span::after{
+    content: '<';
+
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    transition: 0.3s;
+}
+.btn1:hover span {
+    right: 5px;
+}
+.btn1:hover span::after{
+    opacity: 1;
+    /* position: absolute; */
+    right: -10px;
+}
+.btn2 {
+    color: #2F4FFF;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition:all 0.6s;
+    border-radius: 5px;
+    background: linear-gradient(to right,#cfd,#cdf);
+    border: 0;    
+    width: 80px;
+    cursor: pointer;
+}
+.btn2 span{
+    transition: 0.3s;
+    position: relative;
+    top: 0;
+    right: 0px;
+}
+.btn2 span::after{
+    content: '>';
+
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    transition: 0.3s;
+}
+.btn2:hover span {
+    right: -5px;
+}
+.btn2:hover span::after{
+    opacity: 1;
+    /* position: absolute; */
+    right: 10px;
+}
+.btn1:hover {
+    background: linear-gradient(to right,#4fff6f,#4F6FFF);
+    color: #cdf;
+}
+.btn2:hover {
+    background: linear-gradient(to right,#4F6FFF,#4fff6f);
+    color: #cdf;
+}

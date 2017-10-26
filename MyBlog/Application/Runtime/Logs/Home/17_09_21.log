@@ -1,0 +1,4 @@
+[ 2017-09-21T20:43:04+08:00 ] ::1 /MyBlog/index.php/Home/Index/single
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY id desc LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mb_post` WHERE ( id< ) ORDER BY id desc LIMIT 1  
+

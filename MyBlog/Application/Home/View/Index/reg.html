@@ -1,0 +1,46 @@
+<php>
+	define('HEADER',4);
+</php>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MyBlog--注册</title>
+<!-- 引入公共脚本和css -->
+<include file="./Application/Home/Public/link_script.html" />
+</head>
+<body>
+<!---header-->
+<include file="./Application/Home/Public/header.html" />
+<!--/header-->
+<div class="contact-content">
+	 <div class="container">
+		<div class="contact-info">
+			<h2 style="text-align:center">注册一个账号</h2>
+		</div>
+		<div class="contact-details">
+			<form action="__CONTROLLER__/reg_vali" method="post" enctype="multipart/form-data">
+				<input type="text" placeholder="*用户名" name="username" srequired/><span id="un_tip"></span>
+				<p>*选择你的性别:
+				<input type="radio" value="0" name="sex" id="secret" required checked>
+				<label for="secret">秘密</label>
+				<input type="radio" value="1" name="sex" id="male" required>
+				<label for="male">男</label>
+				<input type="radio" value="2" name="sex" id="female" required>
+				<label for="female">女</label></p>
+				<input type="password" placeholder="*密码" name="psw" srequired/><span id="psw_tip"></span>
+				<input type="password" placeholder="*密码确认" name="notpsw" srequired/><span style="display:block" id="npsw_tip"></span>
+				<input type="hidden" value="" name="face" id="def_face"/>
+				<iframe id="show" src="__CONTROLLER__/face" frameborder="0" height="300" width="350"></iframe>
+				<input type="button" value="选择头像"><span id="show_face">或上传头像:</span><input type="file" name="up_face" id="up_face"></span>
+				<input type="text" placeholder="邮箱" name="email" />
+				<input type="text" placeholder="手机号" name="phone" />
+				<input type="text" style="width:20%;display:inline;" placeholder="验证码" name="yzm" required/>
+				<img src="__CONTROLLER__/yzm" class="yzm" alt="">
+				<input type="submit" value="注册" name="reg" />
+			 </form>
+		  </div>
+		</div>
+	 </div>
+</div>
+<!---->
+<include file="./Application/Home/Public/footer.html" />

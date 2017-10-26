@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>MyBlog--个人中心</title>
+        <!-- 载入公共脚本和css -->
+        <include file="./Application/Home/Public/link_script.html" />
+        <script src="__PUBLIC__/js/register.js"></script>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/css/update_user.css" />
+    </head>
+    <body>        
+    <!-- 载入header -->
+    <include file="./Application/Home/Public/header.html" />
+    <div class="main">
+        <div class="user">
+            <form action="" method="post">
+                <input type="hidden" value="{$login.user_id}" name="id" />
+                <table border="0">
+                    <tr>
+                        <th>修改用户名:</th> 
+                        <td><input type="text" value="{$login.username}" placeholder="用户名" name="username"></td>
+                        <td><span id="un_tip"></span></td>
+                    </tr>
+                    <tr>
+                        <th>修改头像:</th>
+                        <td><img src="__PUBLIC__/{$login.face}" alt="头像"/></td>
+                        <td><input type="file" name="face" id="" value="修改头像"></td>
+                    </tr>
+                    <tr>
+                        <th>手机号码:</th>
+                        <td><input type="text" name="phone" placeholder="手机号码" /></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>邮箱:</th>
+                        <td><input type="text" name="email" placeholder="邮箱" value="{$login.email}" /></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>QQ:</th>
+                        <td><input type="text" name="qq" placeholder="QQ" /></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <input type="submit" name="send" class="submit" value="修改"/>
+            </form>
+        </div>
+    </div>
+    <!-- 载入footer -->
+    <include file="./Application/Home/Public/footer.html" />
+    </body>
+
+</html>

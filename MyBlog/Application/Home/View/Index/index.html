@@ -1,0 +1,47 @@
+<php>
+	define('HEADER',1);
+</php>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>我的博客--首页</title>
+<include file="./Application/Home/Public/link_script.html"/>
+<!---->
+
+</head>
+<body>
+<!---header-->			
+<include file="./Application/Home/Public/header.html"/>
+<!--/header-->
+
+<!-- content -->
+<div class="content">
+	 <div class="container">
+		 <div class="content-grids">
+			 <div class="col-md-8 content-main">
+				 <div class="content-grid">
+					<volist name="res" id="vo">
+					<div class="content-grid-info">
+						 <a href="__CONTROLLER__/single?title={$vo.id}"><img src="__PUBLIC__/images/post{$i}.jpg" alt=""/></a>
+						 <div class="post-info">
+						 <h4><a href="__CONTROLLER__/single?title={$vo.id}">{$vo.title}</a>--{$vo.author} {$vo.date}</h4>
+						 <p>{$vo.content|msubstr=0,150}</p>
+						 <a href="__CONTROLLER__/single?title={$vo.id}"><span></span>READ MORE</a>
+						 </div>
+					 </div>
+					</volist>
+				 </div>
+			  </div>
+			  <include file="./Application/Home/Public/righter.html" />
+			  <div class="clearfix"></div>
+		  </div>
+		  <div class="pagging">
+		  {$page}
+		  </div>
+			</div>
+	  </div>
+</div>
+<!-- end content -->
+
+<!-- footer -->
+<include file="./Application/Home/Public/footer.html" />

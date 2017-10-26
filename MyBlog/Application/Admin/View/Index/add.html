@@ -1,0 +1,126 @@
+<php>
+    define('HEADER','1');
+</php>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>后台管理系统</title>
+    <!-- 导入字符集样式表和脚本文件 -->
+    <include file="./Application/Admin/Public/link_script.html" />    
+</head>
+<body>
+<!-- Header -->
+<include file="./Application/Admin/Public/header.html" />
+<!-- End Header -->
+
+<!-- Container -->
+<div id="container">
+	<div class="shell">
+		<!-- Small Nav -->
+		<div class="small-nav">
+			<a href="#">主控页面</a>
+			<span>&gt;</span>
+			文章管理
+		</div>
+		<!-- End Small Nav -->
+		
+		<!-- Message OK -->		
+		<!-- <div class="msg msg-ok">
+			<p><strong>Your file was uploaded succesifully!</strong></p>
+			<a href="#" class="close">close</a>
+		</div> -->
+		<!-- End Message OK -->		
+		
+		<!-- Message Error -->
+		<!-- <div class="msg msg-error">
+			<p><strong>You must select a file to upload first!</strong></p>
+			<a href="#" class="close">close</a>
+		</div> -->
+		<!-- End Message Error -->
+		<br />
+        <!-- Main -->
+        <p id="error"></p>
+		<div id="main">
+			<div class="cl">&nbsp;</div>
+			<!-- Content -->
+                <div id="content-add">
+                    <!-- Box -->
+                    <div class="box">
+                        <!-- Box Head -->
+                        <div class="box-head">
+                            <h2>添加新的文章</h2>
+                        </div>
+                        <!-- End Box Head -->
+                        
+                        <form action="" method="post">
+                            
+                            <!-- Form -->
+                            <div class="form">
+                                    <p>
+                                        <span class="req pan">最多50个字</span>
+                                        <label><span class="pan">*</span>文章标题 <span class="pan">(Required Field)</span></label>
+                                        <input type="text" class="field size4" name="title" value="{$res.title}"/>
+                                    </p>
+                                    <p class="inline-field">
+                                            <span class="req pan">最多20个字</span>
+                                            <label class="">作者<span class="pan"> (Required Field)</span>
+                                                <span class="from">来源<span> (Required Field)</span></span>
+                                            </label>
+                                            <input type="text" class="field size5" name="author" value="{$res.author}"/>
+                                            <input type="text" class="field size5" name="con_from" value="{$res.con_from}"/>
+                                    </p>	
+                                    <!-- <p class="inline-field">
+                                        <label>日期</label>
+                                        <select class="field size2">
+                                        <for start="1" end="32">
+                                            <option value="">{$i}日</option>
+                                        </for>
+                                        </select>
+                                        <select class="field size3">
+                                        <for start="1" end="13">											
+                                            <option value="">{$i}月</option>
+                                        </for>
+                                        </select>
+                                        <select class="field size3">
+                                        <for start="2017" end="2019">											
+                                            <option value="">{$i}年</option>
+                                        </for>
+                                        </select>
+                                    </p> -->
+                                    
+                                    <p class="text-height">
+                                        <label><span class="pan">*</span>内容 <span class="pan">(Required Field)</span></label>
+                                        <textarea name="content" class="editor-height" id="editor" cols="30" rows="10">{$res.content}</textarea>
+                                        <!-- <textarea class="field size4" rows="10" cols="30" name="content" id="content-t" wrap="Virtual">{$res.content}</textarea> -->
+                                    </p>	
+                            </div>
+                            <!-- End Form -->
+                            
+                            <!-- Form Buttons -->
+                            <div class="buttons">
+                                <input type="submit" class="button" value="提交" />
+                            </div>
+                            <!-- End Form Buttons -->
+                        </form>
+                    </div>
+                    <!-- End Box -->
+                </div>
+        </div>
+    </div>
+    <!-- End Container -->
+</div>
+<script>
+    var ue = UE.getEditor('editor',{  
+                //这里可以选择自己需要的工具按钮名称
+                toolbars:[['FullScreen','Source','|', 'Undo', 'Redo','|','bold', 'italic', 'underline','|', 'fontfamily','fontsize', '|', 'date', 'time', '|', 'strikethrough', 'superscript', 'subscript',]], 
+                enterTag:'br',
+            });
+    window.UEDITOR_HOME_URL = "./Application/Admin/Public/ueditor/"
+            
+</script>
+<!-- Footer -->
+<include file="./Application/Admin/Public/footer.html" />
+<!-- End Footer -->
+        
+</body>
+</html>
