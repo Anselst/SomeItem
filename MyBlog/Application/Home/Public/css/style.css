@@ -91,7 +91,7 @@ color:#00aeff;
 /*----*/
 .content,.about-content,.contact-content,.single{
 border-top:1px solid #d2d2d2;
-border-bottom:1px solid #d2d2d2;
+/* border-bottom:1px solid #d2d2d2; */
 }
 .content-main {
 padding-left:0;
@@ -223,17 +223,23 @@ color:#00aeff;
 }
 /*----*/
 .footer{
-padding:3em 0;
+width: 100%;
+padding:2em 0;
+position: relative;
+/* bottom: 0; */
+border-top:1px solid #d2d2d2;
 }
 .footer p{
 color:#989898;
 font-size:1em;
+text-align: center;
 }
 .footer p a{
 color:#00aeff;
 }
 .footer p a:hover{
-color:#989898;
+color:#07f;
+text-decoration: none;
 }
 /*--about--*/
 .about-content,.contact-content,.single{
@@ -469,43 +475,6 @@ font-family: 'Lato', sans-serif;
 }
 .desc p a:hover{
 color: #848484;
-}
-.comment {
-  height: 415px;
-}
-.comment form input[type="submit"] {
-color: #fff;
-background: #00aeff;
-position: relative;
-top: 50px;
-left: 650px;
-padding: 0.4em 1.5em;
-text-decoration: none;
-font-size: 0.9em;
-display: inline-block;
-margin-top: 1em;
-border: none;
-outline: none;
-border: 1px solid  #00aeff;
-transition: 0.5s all ease;
--webkit-transition: 0.5s all ease;
--moz-transition: 0.5s all ease;
--o-transition: 0.5s all ease;
--ms-transition: 0.5s all ease;
-}
-.editor-height {
-  height: 300px;
-}
-.comment form input[type="submit"]:hover{
-background: transparent;
-color:#00aeff;
-}
-.comment h3 {
-color: #00aeff;
-margin-bottom: 1em;
-text-decoration: none;
-display: block;
-font-family: 'Oswald', sans-serif;
 }
 /*----responsive-menu-start---*/
 @media(max-width:1440px){
@@ -975,10 +944,10 @@ img.yzm {
   cursor: pointer;
 }
 div.login {
-  float: left;
+  float: right;
   position: relative;
   top: 118px;
-  margin-left: 55px;
+  margin-right: 84px;
   font-family: 微软雅黑;
 }
 div.login p img{

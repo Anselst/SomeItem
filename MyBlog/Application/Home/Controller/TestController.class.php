@@ -5,7 +5,6 @@ class TestController extends Controller {
 
     public function index()
     {
-        echo TEST;
         $this->display();
     }
     

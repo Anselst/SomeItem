@@ -1,0 +1,111 @@
+html, body{
+    background:AliceBlue;
+    font-size: 100%;
+    background-size:cover;
+    font-family: 'Oswald', sans-serif;	
+}
+body a{
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  -ms-transition: 0.5s all ease;
+}
+h1,h2,h3,h4,h5,h6{
+      margin:0;			   
+}
+p{
+      margin:0;
+}
+ul,label{
+      margin:0;
+      padding:0;
+}
+hr {
+    color: red;
+    border: 1px solid #ccc;
+    width: 110%;
+    position: relative;
+    right: 5%;
+}
+/* header */
+.logo{
+    float:left;
+    margin-right:2em;
+}
+.top-menu{
+    float:left;
+    width:30%;
+    margin-top:3.5em;
+}
+.search {
+    width: 65%;
+    position:relative;
+}
+.search form {
+    border: 1px solid #dbdbdb;
+    background:#dbdbdb;
+}
+.search form input[type="text"] {
+    padding: 5px 6px;
+    font-weight: 400;
+    font-size: 1em;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    width: 87%;
+    background:#dbdbdb;
+}
+.search form input[type="submit"] {
+    background: url('../images/search.png')no-repeat 0px 0px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top:23%;
+}
+.top-menu ul {
+    margin-top:1em;
+    width: 250px;
+}
+.top-menu ul li {
+    display: inline-block;
+}
+.top-menu ul li a {
+    margin:1em 1.7em 1em 0em;
+    display: block;
+    color: #4a5054;
+    font-weight: 400;
+    font-size: 0.9em;
+    text-decoration: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+.top-menu ul li a:hover,.top-menu ul li.active a{
+    color:#00aeff;
+}
+/** footer **/
+.footer{
+    width: 100%;
+    padding:2em 0;
+    position: absolute;
+    bottom: 0;
+    border-top:1px solid #d2d2d2;
+}
+.footer p{
+    color:#989898;
+    font-size:1em;
+    text-align: center;
+}
+.footer p a{
+    color:#00aeff;
+}
+.footer p a:hover{
+    color:#07f;
+    text-decoration: none;
+}

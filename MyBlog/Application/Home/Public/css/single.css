@@ -1,0 +1,267 @@
+html, body{
+    background:AliceBlue;
+    font-size: 100%;
+    background-size:cover;
+    font-family: 'Oswald', sans-serif;	
+}
+body a{
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  -ms-transition: 0.5s all ease;
+}
+h1,h2,h3,h4,h5,h6{
+      margin:0;			   
+}
+p{
+      margin:0;
+}
+ul,label{
+      margin:0;
+      padding:0;
+}
+hr {
+    color: red;
+    border: 1px solid #ccc;
+    width: 110%;
+    position: relative;
+    right: 5%;
+}
+/* header */
+.logo{
+    float:left;
+    margin-right:2em;
+}
+.top-menu{
+    float:left;
+    width:30%;
+    margin-top:3.5em;
+}
+.search {
+    width: 65%;
+    position:relative;
+}
+.search form {
+    border: 1px solid #dbdbdb;
+    background:#dbdbdb;
+}
+.search form input[type="text"] {
+    padding: 5px 6px;
+    font-weight: 400;
+    font-size: 1em;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    width: 87%;
+    background:#dbdbdb;
+}
+.search form input[type="submit"] {
+    background: url('../images/search.png')no-repeat 0px 0px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top:23%;
+}
+.top-menu ul {
+    margin-top:1em;
+    width: 250px;
+}
+.top-menu ul li {
+    display: inline-block;
+}
+.top-menu ul li a {
+    margin:1em 1.7em 1em 0em;
+    display: block;
+    color: #4a5054;
+    font-weight: 400;
+    font-size: 0.9em;
+    text-decoration: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+.top-menu ul li a:hover,.top-menu ul li.active a{
+    color:#00aeff;
+}
+.single{
+    border-top:1px solid #d2d2d2;
+    border-bottom:1px solid #d2d2d2;
+}
+/* **** */
+.col-md-8 {
+    padding: 0;
+}
+.single-grid p {
+    font-family: 'Lato', sans-serif;
+    color: #9a9da0;
+    font-size: 1em;
+    line-height: 1.8em;
+    margin:1em 0;
+    text-align:justify;
+}
+.single-grid img{
+    width:100%;
+}
+ul.comment-list {
+    border: 1px solid #BAB6B6;
+    padding: 2em;
+    margin: 3em 0;
+    list-style: none;
+}
+.post-info{
+    background:#fff;
+    padding:2em;
+}
+.post-info h4{
+    color:#afafaf;
+    font-family: 'Lato', sans-serif;
+    font-size:0.8em;
+    margin-bottom:1em;
+}
+.post-info h4 a{
+    font-size:1.7em;
+    color:#00aeff;
+    margin-right:0.7em;
+    display:inline-block;
+    text-decoration:none;
+    font-family: 'Oswald', sans-serif;	
+    font-weight:400;
+    text-transform:uppercase;
+}
+.post-info h4 a:hover{
+    color: #4a5054;
+}
+.post-info p{
+    font-family: 'Lato', sans-serif;
+    color:#9a9da0;
+    font-size:0.9em;
+    line-height:1.5em;
+    margin-bottom:1em;
+}
+.post-info a span {
+    background: url(../images/more.png) no-repeat 0px 3px;
+    height: 18px;
+    width: 15px;
+    display: inline-block;
+    margin-right: 7px;
+}
+.post-info a {
+    color: #626465;
+    font-weight: 400;
+    font-size: 1em;
+    display: inline-block;
+    text-decoration: none;
+}
+.post-info a:hover{
+    color:#00aeff;
+}
+.comment h3 {
+font-size: 1.1em;
+}
+.prev {
+    margin-top: 15px;
+}
+.next {
+    margin-bottom: 20px;
+}
+.prev a{
+    text-decoration: none;
+}
+.prev p{
+    font-family: 华文雅黑;
+}
+.next a{
+    text-decoration: none;
+}
+.next p{
+    font-family: sans-serif;  
+}
+.pagging {
+    text-align: center;
+}
+.pagging span {
+    border: 1px solid rgb(255, 163, 178);
+    background: #F16262 ;
+    color: #fff;
+    border-radius: 4px;
+    padding:0 8px;
+    margin: 0 5px;
+}
+.pagging a {
+    border: 1px solid rgb(113, 179, 245);
+    border-radius: 4px;
+    text-decoration: none;
+    padding:0 8px;
+    background: rgba(85, 187, 255, 0.51);
+    color: #1C1A3A;
+}
+.pagging a:hover {
+    background: #00aeff;
+    color: aliceblue;
+}
+div.text-box {
+    width: 730px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+div.text-box:hover, div.text-box:focus {
+    border: 1px solid #00aeff;
+}
+div.text-box span{
+    background: #f8f8f8;
+    width: 729px;
+    height: 33px;
+    border-top: 1px solid #ccc;
+    display: inline-block;
+}
+div.text-box span p{
+    display: inline;
+    line-height: 33px;
+    padding-left: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+.comment form input[type="submit"] {
+    color: #fff;
+    background: #00aeff;
+    float: right;
+    padding: 6px 21px;
+    text-decoration: none;
+    font-size: 0.9em;
+    display: inline-block;
+    margin: 0;
+    border: none;
+    border-radius: 0 0 5px 0;
+    outline: none;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+}
+.comment textarea {
+    resize: none;
+    width: 100%;
+    height: 130px;
+    border: none;
+    background: #fff;
+    padding: 10px;
+    font-size: 0.9em;
+}
+.comment form input[type="submit"]:hover{
+    background: #00cdff;
+}
+.comment h3 {
+    color: #00aeff;
+    margin-bottom: 1em;
+    text-decoration: none;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+}
+/** footer **/

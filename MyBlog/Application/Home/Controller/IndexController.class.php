@@ -181,7 +181,7 @@ class IndexController extends Controller {
             if($data = $user->create()){
                 $data['login_id'] = $user->_sha1($data['username']);
                 //插入头像地址
-                if(empty($_FILES['up_face']['error'])){
+                if(empty($_FILES['up_face']['error'])){  //如果用户没有选择头像
                     $data['face'] = $this->uploadImage($_FILES['up_face']);
                 } else {
                     //插入默认头像地址

@@ -8,9 +8,7 @@
 
 <!---->
 <include file="./Application/Home/Public/link_script.html" />
-<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
-<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.all.min.js"> </script>
-<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/single.css" />
 </head>
 <body>
 <!---header-->			
@@ -20,13 +18,12 @@
 <!-- <volist name="res.test" id="vo">
 	<p>{$vo}</p>
 	</volist> -->
-
 <div class="single">
 	<div class="container">
 		<div class="col-md-8 single-main">				 
 			<div class="single-grid">
 				<img src="__PUBLIC__/images/post1.jpg" alt=""/>	
-				<div class="post-info">							
+				<div class="post-info">					
 				<h4><a href="">{$res.title}</a>-- {$res.author} {$res.date}</h4>
 				</div>
 				<volist name="res.content" id="vo">
@@ -46,13 +43,16 @@
 				<a href="__CONTROLLER__/single?title={$next.id}">{$next.title}</a></p>
 				<else /><p><strong>下一篇: 已经到头了</strong></p>
 				</if>
-			</div>				
+			</div>
+			<hr />
 			<div class="comment">
-				<h3>写条评论吧</h3>
-				<form action="__MODULE__/User/comment" method="post">
-					<textarea name="comment" class="editor-height" id="editor" cols="30" rows="10"></textarea>							
-					<input type="submit" value="评论"/>
-				</form>
+				<h3>评论一下</h3>
+				<div class="text-box">
+					<form action="__MODULE__/User/comment" method="post">
+						<textarea name="comm"></textarea>							
+						<span><p>请注意文明用语!</p><input type="submit" value="评论"/></span>
+					</form>
+				</div>
 			</div>
 		</div>
 		  	<include file="./Application/Home/Public/righter.html" />
@@ -62,13 +62,5 @@
 		</div>
 	</div>
 </div>
-<script>
-	window.UEDITOR_HOME_URL = "./Application/Home/Public/ueditor/"
-	//实例化编辑器
-	var ue = UE.getEditor('editor',{  
-                //这里可以选择自己需要的工具按钮名称
-                toolbars:[['bold', 'italic', 'underline','|', 'fontfamily','fontsize', '|', 'strikethrough', 'superscript', 'subscript','|','emotion','simpleupload']],
-            });
-</script>
 <!---->
 <include file="./Application/Home/Public/footer.html" />
