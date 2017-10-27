@@ -12,7 +12,7 @@
 ![register](https://github.com/Anselst/SomeItem/blob/dev/MyBlog/Sample_Pictures/blog_reg.png "register")
 注册页面的用户名使用AJAX进行查重和验证，其他字段都使用AJAX验证长度与格式，同时服务器端也进行验证。
 * 登录后跳转到首页
-![index](https://github.com/Anselst/SomeItem/blob/dev/MyBlog/Sample_Pictures/blog_login.png "index")
+![index](https://github.com/Anselst/SomeItem/blob/dev/MyBlog/Sample_Pictures/blog_index.png "index")
 首页显示登录后的用户名和头像，然后按时间倒序显示博客简介。
 * 点击头像或个人中心可修改用户名头像等
 * 通过后台发布修改内容
