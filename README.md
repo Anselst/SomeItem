@@ -7,7 +7,7 @@
 #### 页面与功能展示
 * 前台必须登录才可查看内容
 ![login](https://github.com/Anselst/SomeItem/blob/dev/MyBlog/Sample_Pictures/blog_login.png "login")  
-登录页面的用户名和密码使用AJAX进行验证，同时服务器端也使用了ThinkPHP的自动验证，防止js被禁用。
+登录页面的用户名和密码使用AJAX进行验证，同时服务器端也使用了ThinkPHP的自动验证，以免js禁用后无法验证。
 * 注册页面
 ![register](https://github.com/Anselst/SomeItem/blob/dev/MyBlog/Sample_Pictures/blog_reg.png "register")
 注册页面的用户名使用AJAX进行查重和验证，其他字段都使用AJAX验证长度与格式，同时服务器端也进行验证。
