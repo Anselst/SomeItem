@@ -1,0 +1,230 @@
+<php>
+    define('HEADER','1');
+</php>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>后台管理系统</title>
+    <!-- 导入字符集样式表和脚本文件 -->
+    <include file="./Application/Admin/Public/link_script.html" />    
+</head>
+<body>
+<!-- Header -->
+<include file="./Application/Admin/Public/header.html" />
+<!-- End Header -->
+<div id="container">
+	<div class="shell">
+		<div class="small-nav">
+			<a href="__CONTROLLER__/Nav">栏目管理</a>
+			<span>&gt;</span>
+<if condition="$Nav eq 'show'" >
+			栏目列表
+		</div>
+<!-- Main1 -->
+	<div id="main">
+		<div class="cl">&nbsp;</div>
+		<!-- Content -->
+		<div id="content">
+			<!-- Box -->
+			<div class="box">
+				<!-- Box Head -->
+				<div class="box-head">
+					<h2 class="left">栏目列表</h2>
+					<div class="right">
+						<form action="" method="post">
+							<input type="hidden" name="ts" value="submit" />
+							<label>查找栏目</label>
+							<input type="text" class="field small-field" name="search" />
+							<input type="submit" class="button" value="搜索" />
+						</form>
+					</div>
+				</div>
+				<!-- End Box Head -->
+				<!-- Table -->
+				<div class="table">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<th width="30">编号</th>
+							<th>栏目名称</th>
+							<th>栏目简介</th>
+							<th width="110" class="ac">操作</th>
+							<!-- <th>排序</th> -->
+						</tr>
+						<volist name="res" id="vo">
+						<tr>
+							<td><php>$n=isset($_GET['p'])?$_GET['p']:1;echo (($n-1)*$num)+$i;</php></td>
+							<td class="abcde">
+								<h3><a href="#" id="{$vo.id}">{$vo.nav_name}</a></h3>
+							</td>
+							<td>{$vo.nav_info}</td>
+							<td>
+								<a href="__CONTROLLER__/del?id={$vo.id}&label=nav" class="ico del" onclick="return confirm('你确定要删除这个栏目么?');">删除</a>
+								<a href="__CONTROLLER__/updateNav?id={$vo.id}" class="ico edit">修改</a>
+							</td>
+							<!-- <td><input type="text" id="sort" name="sort" value="{$vo.sort}" /></td> -->
+						</tr>
+						<tr class="hide-tr" id="tr{$vo.id}">
+						</tr>
+						</volist>
+						<!-- <tr>
+							<td colspan="4"></td>
+							<td><input type="submit" name="send" value="修改" /></td>
+						</tr> -->
+					</table>
+					<!-- Pagging -->
+					<div class="pagging">{$page}</div>
+					<!-- End Pagging -->
+				</div>
+				<!-- Table -->
+			</div>
+			<!-- End Box -->
+		</div>
+		<!-- End Content -->
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<!-- Box -->
+			<div class="box">
+				<!-- Box Head -->
+				<div class="box-head"><h2>Management</h2></div>
+				<!-- End Box Head-->
+				<div class="box-content">
+					<a href="__CONTROLLER__/addNav" class="add-button">
+						<span>添加新的栏目</span>
+					</a>
+					<div class="cl">&nbsp;</div>
+					<p class="select-all">
+						<input type="checkbox" class="checkbox" />
+						<label>select all</label>
+					</p>
+					<p><a href="#">删除 Selected</a></p>
+					<!-- Sort -->
+					<div class="sort">
+						<label>排序方式</label>
+						<select class="field">
+							<option value="">标题</option>
+						</select>
+						<select class="field">
+							<option value="">日期</option>
+						</select>
+						<select class="field">
+							<option value="">作者</option>
+						</select>
+					</div>
+					<!-- End Sort -->
+				</div>
+			</div>
+			<!-- End Box -->
+		</div>
+		<!-- End Sidebar -->
+		<div class="cl">&nbsp;</div>
+	</div>
+	<!-- Main1 -->
+	</div>
+</div>
+<elseif condition="$Nav eq 'add'" />
+			添加栏目
+		</div>
+	<div id="main">
+		<div class="cl">&nbsp;</div>
+		<!-- Content -->
+		<div id="content-add">
+			<!-- Box -->
+			<div class="box">
+				<!-- Box Head -->
+				<div class="box-head">
+					<h2>{$title}</h2>
+				</div>
+				<!-- End Box Head -->
+				<form action="" method="post">
+					<!-- Form -->
+					<div class="form">
+						<p>
+							<span class="req pan">最多50个字</span>
+							<label>
+								<span class="pan">*</span>
+								栏目名称
+								<span class="pan">(必须填写)</span>
+							</label>
+							<input type="text" class="field size4" name="nav_name" />
+						</p>
+						<p>
+							<label>
+								<span class="pan">*</span>
+								栏目描述
+								<span class="pan">(必须填写)</span>
+							</label>
+							<textarea name="nav_info" class="field size4" cols="30" rows="10"></textarea>
+						</p>
+					</div>
+					<!-- End Form -->
+					<!-- Form Buttons -->
+					<div class="buttons">
+						<input type="submit" class="button" value="提交" />
+					</div>
+					<!-- End Form Buttons -->
+				</form>
+			</div>
+			<!-- End Box -->
+		</div>
+	</div>
+	</div>
+	<!-- End Container -->
+	</div>
+<elseif condition="$Nav eq 'update'" />
+			修改栏目
+		</div>
+	<div id="main">
+		<div class="cl">&nbsp;</div>
+		<!-- Content -->
+		<div id="content-add">
+			<!-- Box -->
+			<div class="box">
+				<!-- Box Head -->
+				<div class="box-head">
+					<h2>{$title}</h2>
+				</div>
+				<!-- End Box Head -->
+				<form action="" method="post">
+					<!-- Form -->
+					<div class="form">
+						<p>
+							<span class="req pan">最多50个字</span>
+							<label>
+								<span class="pan">*</span>
+								栏目名称
+								<span class="pan">(必须填写)</span>
+							</label>
+							<input type="text" class="field size4" name="nav_name" value="{$res.nav_name}" />
+						</p>
+						<p>
+							<label>
+								<span class="pan">*</span>
+								栏目描述
+								<span class="pan">(必须填写)</span>
+							</label>
+							<textarea name="nav_info" class="field size4" cols="30" rows="10">{$res.nav_info}</textarea>
+						</p>
+					</div>
+					<!-- End Form -->
+					<!-- Form Buttons -->
+					<div class="buttons">
+						<input type="submit" class="button" value="提交" />
+					</div>
+					<!-- End Form Buttons -->
+				</form>
+			</div>
+			<!-- End Box -->
+		</div>
+	</div>
+	</div>
+	<!-- End Container -->
+	</div>
+<else />
+	<h1>非法操作！</h1>
+	</if>
+<!-- Footer -->
+<include file="./Application/Admin/Public/footer.html" />
+<!-- End Footer -->
+        
+</body>
+</html>

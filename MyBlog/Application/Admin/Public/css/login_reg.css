@@ -1,0 +1,170 @@
+@charset "utf-8";
+ul {
+    list-style-type: none;
+}
+/***** Header *****/
+#head {
+    width: 988px;
+    margin: 0 auto;
+
+}
+#head h1 {
+    color: #e7bd51;
+}
+#nav {
+    float: right;
+    position: relative;
+    top: 53px;
+}
+#nav li {
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+}
+#nav ul li a,
+#nav ul li a span { 
+    float:left; 
+    height:36px; 
+    background:url(images/tab.gif) no-repeat 0 0; 
+    padding:0 0 0 15px;
+    color: #666;
+}
+#nav ul li a span { 
+    background-position:right 0; 
+    padding:0 15px 0 0;
+}
+#nav li a:hover{
+    background-position:0 bottom;
+}
+#nav ul li a:hover span{ background-position:right bottom;}
+/***** Login *****/
+#login {
+    width: 400px;
+    margin: 150px auto;
+    color: #333;
+}
+#login fieldset{
+    background: #f8f8f8;
+    padding: 15px;
+    box-shadow: 0 5px 5px #ccc;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#login form legend{
+    margin-left: 15px;
+    color: #666;
+    font-size: 17px;
+    
+}
+#login form label{
+    display: block;
+    padding: 5px 15px 0 15px;
+}
+#login form label img {
+    margin: 0;
+    float: right;
+    position: relative;
+    bottom: 2px;
+    cursor: pointer;
+}
+#login form input.text{
+    width: 340px;
+    height: 35px;
+    padding: 3px 0 3px 8px;
+    font-size: 17px;
+    color: #666;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+#login form input.yzm {
+    width: 160px;
+    height: 35px;
+    padding: 3px 0 3px 8px;
+    font-size: 17px;
+    color: #666;
+    background: #fff;
+    float: left;
+    border: 1px solid #ccc;
+}
+#login form input.submit {
+    width: 50px;
+    height: 30px;
+    margin: 8px 0 0 164px;
+    border: none;
+    background: #e7bd51;
+    cursor: pointer;
+    color: #943a10;
+}
+.disab{
+    width: 50px;
+    height: 30px;
+    margin: 8px 0 0 164px;
+    border: none;
+    background: #aaa;
+    color: #943a10;
+}
+#login form input.submit:hover{
+    background: #e7cf92;
+}
+/***** Register *****/
+#reg {
+    width: 400px;
+    margin: 15px auto;
+}
+#reg form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #ccc;
+    background: #f8f8f8;
+    margin: 20px 10px;
+}
+#reg form legend {
+    font-family: Verdana, sans-serif;
+    font-size: 22px;
+    height: 22px;
+    font-weight: normal;
+    margin: 15px 0;
+}
+#reg form label {
+    display: block;
+    padding: 5px 15px 0 15px;
+}
+#reg form label img {
+    margin: 0;
+    float: right;
+    position: relative;
+    bottom: 2px;
+    cursor: pointer;
+}
+#reg form input.text {
+    width: 340px;
+    height: 35px;
+    padding: 3px 0 3px 8px;
+    font-size: 17px;
+    color: #666;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+#reg form input.yzm {
+    width: 160px;
+    height: 35px;
+    padding: 3px 0 3px 8px;
+    font-size: 17px;
+    color: #666;
+    background: #fff;
+    float: left;
+    border: 1px solid #ccc;
+}
+#reg form input.submit {
+    width: 50px;
+    height: 30px;
+    margin: 8px 0 15px 164px;
+    border: none;
+    background: #e7bd51;
+    cursor: pointer;
+    color: #943a10;
+}
+#reg form input.submit:hover{
+    background: #e7cf92;
+}

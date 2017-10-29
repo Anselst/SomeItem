@@ -5,6 +5,9 @@ class TestController extends Controller {
 
     public function index()
     {
+        $test = D('Nav');
+        $res = $test->select();
+        $this->assign('res', $res);
         $this->display();
     }
     

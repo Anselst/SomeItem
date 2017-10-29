@@ -35,4 +35,13 @@ $(document).ready(function(){
     $('.yzm').click(function(){
         $('.yzm').attr('src','/MyBlog/index.php/Home/Index/yzm');
     });
+
+    $('.login img').hover(
+        function(){
+            $('#login_msg').show();
+        },
+        function(){
+            $('#login_msg').hide();            
+        }
+    );
 });

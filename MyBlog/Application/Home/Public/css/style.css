@@ -101,7 +101,7 @@ div .right {
   text-align: center;
 }
 .content-grids {
-margin-top: 4em;
+margin-top: 2em;
 }
 .content-grid-info img {
   width: 670px;
@@ -947,14 +947,16 @@ div.login {
   float: right;
   position: relative;
   top: 118px;
-  margin-right: 84px;
+  margin-right: 159px;
   font-family: 微软雅黑;
 }
 div.login p img{
   width: 50px;
   height: 50px;
 }
-
+#login_msg {
+  display: none;
+}
 iframe {
   display: none;
   margin-right: 50%;

@@ -43,6 +43,7 @@ h3 a{ text-decoration: none; }
 
 
 .shell { width:988px; margin:0 auto; }
+/* .shell p { text-align: center; } */
 
 #header { height:89px; background:url(images/header.gif); white-space:nowrap; }
 #header h1{ float:left; display:inline; padding-top:12px; }
@@ -82,13 +83,13 @@ h3 a{ text-decoration: none; }
 
 
 .table {}
-.table th{ background:#fffdfa url(images/th.gif) repeat-x 0 0; color:#818181; text-align: left; padding:7px 10px; border-bottom:solid 1px #d2d1cb;}
-.table td{ background:#fbfcfc;  border-bottom:solid 1px #e0e0e0; padding:8px 10px; }
+.table th{ text-align: center; background:#fffdfa url(images/th.gif) repeat-x 0 0; color:#818181; padding:7px 10px; border-bottom:solid 1px #d2d1cb;}
+.table td{ text-align: center; background:#fbfcfc;  border-bottom:solid 1px #e0e0e0; padding:8px 10px; }
 .table tr.odd td{ background:#f8f8f8; }
 .table tr:hover td{ background:#fff9e1; }
-.table a.ico{ }
+#sort { width: 30px;text-align: center; }
 
-.box { background:#fbfcfc; height:60%; padding:1px; margin-bottom:20px; }
+.box { background:#fbfcfc; padding:1px; margin-bottom:20px; }
 .box-head { background:#ba4c32; height:32px; color:#fff; padding: 0 10px; line-height:32px; white-space:nowrap; border-bottom:solid 1px #fff; }
 .box-head .right{ padding-top:5px; line-height:13px;}
 .box-head .right label,

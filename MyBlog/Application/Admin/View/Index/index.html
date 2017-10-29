@@ -23,7 +23,7 @@
 		<div class="small-nav">
 			<a href="#">主控页面</a>
 			<span>&gt;</span>
-			文章管理
+			列表展示
 		</div>
 		<!-- End Small Nav -->
 		
@@ -43,18 +43,16 @@
 		</div> -->
 		<!-- End Message Error -->
 		<br />
-		<!-- Main -->
+		<!-- Main1 -->
 		<div id="main">
 			<div class="cl">&nbsp;</div>
-			
 			<!-- Content -->
 			<div id="content">
-				
 				<!-- Box -->
 				<div class="box">
 					<!-- Box Head -->
 					<div class="box-head">
-						<h2 class="left">文章管理</h2>
+						<h2 class="left">文章列表</h2>
 						<div class="right">
 							<form action="" method="post">
 							<input type="hidden" name="ts" value="submit"/>							
@@ -82,7 +80,7 @@
 								<td class="abcde"><h3><a href="#" id="{$vo.id}">{$vo.title}</a></h3></td>
 								<td>{$vo.date}</td>
 								<td><a href="#">{$vo.author}</a></td>
-								<td><a href="__CONTROLLER__/del?id={$vo.id}" class="ico del" onclick="return confirm('你要删除这篇文章么?');">删除</a><a href="__CONTROLLER__/add?id={$vo.id}" class="ico edit">修改</a></td>
+								<td><a href="__CONTROLLER__/del?id={$vo.id}" class="ico del" onclick="return confirm('你要删除这篇文章么?');">删除</a><a href="__CONTROLLER__/updateCont?id={$vo.id}" class="ico edit">修改</a></td>
 							</tr>
 							<tr class="hide-tr" id="tr{$vo.id}">
 								<td colspan="5">{$vo.content|msubstr=0,200}</td>
@@ -150,7 +148,99 @@
 			
 			<div class="cl">&nbsp;</div>			
 		</div>
-		<!-- Main -->
+		<!-- Main1 -->
+		<!-- Main2 -->		
+		<div id="main">
+			<div class="cl">&nbsp;</div>
+			<!-- Content -->
+			<div id="content">
+				<!-- Box -->
+				<div class="box">
+					<!-- Box Head -->
+					<div class="box-head">
+						<h2 class="left">栏目列表</h2>
+						<div class="right">
+							<form action="" method="post">
+							<input type="hidden" name="ts" value="submit"/>							
+							<label>查找标题</label>
+							<input type="text" class="field small-field" name="search" />
+							<input type="submit" class="button" value="搜索" />
+							</form>
+						</div>
+					</div>
+					<!-- End Box Head -->	
+
+					<!-- Table -->
+					<div class="table">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<th width="13"><input type="checkbox" class="checkbox" /></th>
+								<th>标题</th>
+								<th>发布时间</th>
+								<th>作者</th>
+								<th width="110" class="ac">操作</th>
+							</tr>
+							<volist name="res" id="vo">
+							<tr>
+								<td><input type="checkbox" class="checkbox" /></td>
+								<td class="abcde"><h3><a href="#" id="{$vo.id}">{$vo.title}</a></h3></td>
+								<td>{$vo.date}</td>
+								<td><a href="#">{$vo.author}</a></td>
+								<td><a href="__CONTROLLER__/del?id={$vo.id}" class="ico del" onclick="return confirm('你要删除这篇文章么?');">删除</a><a href="__CONTROLLER__/updateCont?id={$vo.id}" class="ico edit">修改</a></td>
+							</tr>
+							<tr class="hide-tr" id="tr{$vo.id}">
+								<td colspan="5">{$vo.content|msubstr=0,200}</td>
+							</tr>
+							</volist>
+						</table>
+						<!-- Pagging -->
+						<div class="pagging">
+								{$page}
+						</div>
+						<!-- End Pagging -->
+					</div>
+					<!-- Table -->
+				</div>
+				<!-- End Box -->
+			</div>
+			<!-- End Content -->
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<!-- Box -->
+				<div class="box">
+					<!-- Box Head -->
+					<div class="box-head">
+						<h2>Management</h2>
+					</div>
+					<!-- End Box Head-->
+					<div class="box-content">
+						<a href="__CONTROLLER__/add" class="add-button"><span>添加新的文章</span></a>
+						<div class="cl">&nbsp;</div>
+						<p class="select-all"><input type="checkbox" class="checkbox" /><label>select all</label></p>
+						<p><a href="#">删除 Selected</a></p>
+						<!-- Sort -->
+						<div class="sort">
+							<label>排序方式</label>
+							<select class="field">
+								<option value="">标题</option>
+							</select>
+							<select class="field">
+								<option value="">日期</option>
+							</select>
+							<select class="field">
+								<option value="">作者</option>
+							</select>
+						</div>
+						<!-- End Sort -->
+					</div>
+				</div>
+				<!-- End Box -->
+			</div>
+			<!-- End Sidebar -->
+			<div class="cl">&nbsp;</div>			
+		</div>
+		<!-- Main2 -->
+		
 	</div>
 </div>
 <!-- End Container -->

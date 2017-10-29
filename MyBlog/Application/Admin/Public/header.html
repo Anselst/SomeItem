@@ -1,16 +1,33 @@
 <div id="header">
+	<if condition="(HEAD eq '登录') OR (HEAD eq '注册')">
+		<div id="head">
+    		<h1><a href="#">MyBlog后台管理</a></h1>
+    		<div id="nav">
+                <ul>
+                <if condition="HEAD eq '登录'">
+                    <li><a href="__CONTROLLER__/login"><span>登录</span></a></li>
+                <else />
+                	<li><a href="__CONTROLLER__/reg"><span>注册</span></a></li>
+                </if>
+                    <li><a href="__MODULE__/User/one" ><span>游客登入</span></a></li>
+                    <li><a href="__MODULE__/User/bug" ><span>提交BUG</span></a></li>
+                    <li><a href="__MODULE__/User/" ><span>联系我</span></a></li>
+                </ul>
+            </div>
+    	</div>
+	<else />
         <div class="shell">
             <!-- Logo + Top Nav -->
             <div id="top">
                 <h1><a href="#">SpringTime</a></h1>
                 <div id="top-navigation" >
-                    欢迎 <a href="#" ><strong>Adminstartor</strong></a>
+                    欢迎 <a href="#" ><strong>{$login.username}</strong></a>
                     <span>|</span>
-                    <a href="#">帮助</a>
+                    <a href="__CONTROLLER__/help">帮助</a>
                     <span>|</span>
-                    <a href="#">管理设置</a>
+                    <a href="__CONTROLLER__/setting">管理设置</a>
                     <span>|</span>
-                    <a href="#">退出</a>
+                    <a href="__MODULE__/User/logout">退出</a>
                 </div>
             </div>
             <!-- End Logo + Top Nav -->
@@ -19,9 +36,9 @@
             <div id="navigation">
                 <ul>
                     <li><a href="__MODULE__/Index/" <php> if (HEADER==0)echo 'class="active"';</php> ><span>主控页面</span></a></li>
-                    <li><a href="__MODULE__/Index/add" <php> if (HEADER==1)echo 'class="active"';</php> ><span>
-<php>if($_GET['id']){echo '修改文章';}else{echo '新建文章';}</php></span></a></li>
-                    <li><a href="__MODULE__/User" <php> if (HEADER==2)echo 'class="active"';</php>><span>用户管理</span></a></li>
+                    <li><a href="__MODULE__/Index/Nav" <php> if (HEADER==1)echo 'class="active"';</php> ><span>栏目管理</span></a></li>
+                    <li><a href="__MODULE__/Index/Cont" <php> if (HEADER==2)echo 'class="active"';</php> ><span>文章管理</span></a></li>
+                    <li><a href="__MODULE__/User" <php> if (HEADER==3)echo 'class="active"';</php>><span>用户管理</span></a></li>
                     <li><a href="#" class=""><span>图片管理</span></a></li>
                     <li><a href="#" class=""><span>Products</span></a></li>
                     <li><a href="#" class=""><span>Services Control</span></a></li>
@@ -29,4 +46,5 @@
             </div>
             <!-- End Main Nav -->
         </div>
+        </if>
 </div>

@@ -1,0 +1,37 @@
+<php>
+	define('HEAD', '登录');
+</php>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MyBlog--注册</title>
+<!-- 引入公共脚本和css -->
+<include file="./Application/Admin/Public/link_script.html" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/login_reg.css" />
+</head>
+<body>
+<!---header-->
+<include file="./Application/Admin/Public/header.html" />
+<!--/header-->
+<div id="reg">
+	<form class="post" action="__CONTROLLER__/reg_vali" method="post" enctype="multipart/form-data">
+		<legend style="text-align:center">注册一个账号</legend>
+		<input type="hidden" value="reg" name="reg" />
+		<label><input type="text" placeholder="* 用户名" name="username" class="text" required/></label>
+		<label id="tip_user"></label>
+		<label><input type="password" placeholder="* 密码" name="psw" class="text" required/></label>
+		<label id="tip_psw"></label>
+		<label><input type="password" placeholder="* 密码确认" name="notpsw" class="text" required/></label>
+		<label id="tip_notpsw"></label>
+		<!-- <input type="hidden" value="" name="face" id="def_face"/>
+		<iframe id="show" src="__CONTROLLER__/face" frameborder="0" height="300" width="350"></iframe>
+		<input type="button" value="选择头像"><span id="show_face">或上传头像:</span><input type="file" name="up_face" id="up_face"></span> -->
+		<label><input type="text" placeholder="邮箱" name="email" class="text" /></label>
+		<label><input type="text" placeholder="手机号" name="phone" class="text" /></label>
+		<label><input type="text"  class="yzm" placeholder="验证码" name="yzm" required/>
+		<img src="__CONTROLLER__/yzm" alt="" id="yzm"></label>
+		<input type="submit" value="注册" name="send" class="submit" />
+	 </form>
+ </div>
+<!---->
+<include file="./Application/Admin/Public/footer.html" />
