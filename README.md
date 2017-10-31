@@ -2,27 +2,26 @@
     PHP初学者的两个小项目，第一个是刚刚学习完php基础后写的一个博客，第二个是学习面向对象思想后实现的一个CMS。
 
 ## MyBlog
-    使用**ThinkPHP**框架实现的一个小博客。现在的博客并不完善，很多功能都缺失，之后会逐渐完善。
+    使用**ThinkPHP**框架实现的一个个人博客。目前还在完善中。
 
 #### 页面与功能展示
-* 前台必须登录才可查看内容  
-![](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/front_login.png "login")  
-登录页面的用户名和密码使用AJAX进行验证，同时服务器端也使用了ThinkPHP的自动验证，以免js禁用后无法验证。  
-* 注册页面  
-![register](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/front_reg.png "register")
-注册页面的用户名使用AJAX进行查重和验证，其他字段都使用AJAX验证长度与格式，同时服务器端也进行验证。  
-* 登录后跳转到首页  
-![index](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/front_index.png "index")
-首页显示登录后的用户名和头像，然后按时间倒序显示博客简介。右侧的日历使用AJAX获取上个月或下个月的日期。  
-* 点击头像或个人中心可修改用户名头像等  
-![暂无图片]( "暂无图片")
-* 通过后台发布修改内容  
-![index](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/admin_index.png "index")
-![add](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/admin_add.png "add")
+* 博客首页  
+![](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/front_index.png "index")  
+* 内容页
+![](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/front_single.png "single")  
+* 后台登录页面  
+![images](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/admin_login.png "login")
+* 游客注册
+![](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/admin_reg.png "register")  
+  - 注册成功的账号只有浏览后台首页的权限，不能进行栏目，博客或用户的增删改功能。
+* 后台首页
+![](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/admin_index.png "index")  
+* 栏目功能页(还未完善)
+![](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/admin_nav.png "nav")  
+* 博客功能页(还未完善)
+![](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/admin_cont.png "cont")  
 
 #### 后续目标
-    因为是第一次写的项目，对MVC结构不熟悉，之后会继续学习完善这个项目。
-* 前台增加游客无需登录即可查看
-* 前台登录功能完善，实现发布自己的博客，个人空间
-* 后台增加管理前台的用户、评论
-
+    因为是第一次写的项目，对MVC架构不熟悉，之后会继续学习完善这个项目。  
+    * 增加栏目功能，将博客分类  
+    * 后台栏目，博客排序功能  
