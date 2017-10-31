@@ -2,21 +2,24 @@
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
-    /**
-     * 博客首页,展示文章标题作者和缩略内容
-     *
-     * @return void
-     */
+    private $post;
+    private $nav;
+    
+    public function __construct()
+    {
+        parent::__construct();
+        $this->post = D('Post');
+        $this->nav = D('Nav');
+    }
+    
+    //博客首页,展示文章标题作者和缩略内容
     public function index(){
-        $post = D('Post');
-        $nav = D('Nav');
-        $_res = $nav->select();
-        $this->assign('_res', $_res);
+        $this->show_nav();
         //分页
-        $count = $post->count();
+        $count = $this->post->count();
         $Page = new \Think\Page($count,8);
         $show = $Page->show();
-        $res = $post->order('date desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $res = $this->post->order('date desc')->limit($Page->firstRow.','.$Page->listRows)->select();
         //处理文章内容
         $res = $this->cont_rep($res);
         //实例化日历类
@@ -34,11 +37,7 @@ class IndexController extends Controller {
         $this->display();
     }
 
-    /**
-     * 日历ajax
-     *
-     * @return void
-     */
+    // 日历ajax
     public function ajax_calen(){
         if(@$_POST['month']||@$_POST['month'] === '0'){
             $calendar = new \Org\Util\Calendar($_POST['month']);
@@ -77,12 +76,7 @@ class IndexController extends Controller {
         }
     }
 
-    /**
-     * 处理从数据库中取出的文章内容
-     *
-     * @param [type] $res 数据库的结果集
-     * @return string 返回处理后的内容
-     */
+    //处理从数据库中取出的文章内容
     public function cont_rep(&$res){
         if(is_array($res[0])){
             for ($i=0;$i<count($res);$i++) {
@@ -110,10 +104,6 @@ class IndexController extends Controller {
     
 
     public function test() {
-        $year = date('Y');
-        $month = date('m');
-        echo cal_days_in_month(CAL_GREGORIAN,$month,$year);        
-        echo $num;
 
     }
 
@@ -124,21 +114,15 @@ class IndexController extends Controller {
         // $this->ajaxReturn($un);
     }
 
-    /**
-     * 博客展示页,点击标题自动跳转
-     *
-     * @return void
-     */
+    // 博客展示页,点击标题自动跳转
     public function single(){
-        $post = D('Post');
-        $this->check_login();
         if (IS_GET) {
             $id = I('get.title');
         }
         //从数据库取出文章内容
-        $res = $post->find($id);
+        $res = $this->post->find($id);
         $map['id'] = $id;
-        $post->where($map)->setInc('hot_num',1);
+        $this->post->where($map)->setInc('hot_num',1);
         // $res['test'] = array('1','2','3');
         //对内容进行修饰
         $res = $this->cont_rep($res);
@@ -155,17 +139,12 @@ class IndexController extends Controller {
         $this->assign('res',$res);
 
         //上一篇,下一篇
-        $this->other($post,$id);
+        $this->other($this->post,$id);
 
         $this->display();
     }
 
-    /**
-     * 实现博客展示页的上下篇功能
-     *
-     * @param [string] $id 
-     * @return void
-     */
+    // 实现博客展示页的上下篇功能
     public function other($post,$id) {
         $_prev = $post->where("id<$id")->order('id desc')->find();
         $_next = $post->where("id>$id")->order('id asc')->find();
@@ -175,7 +154,6 @@ class IndexController extends Controller {
     
 
     public function about(){
-        $this->check_login();
         $this->display();
     }
 

@@ -24,6 +24,8 @@ ul {
 }
 #nav ul li a,
 #nav ul li a span { 
+    font-size: 12px;
+    font-weight: bold;
     float:left; 
     height:36px; 
     background:url(images/tab.gif) no-repeat 0 0; 
@@ -38,6 +40,11 @@ ul {
     background-position:0 bottom;
 }
 #nav ul li a:hover span{ background-position:right bottom;}
+#nav ul li a.active,
+#nav ul li a:hover { background-position:0 bottom;}
+#nav ul li a.active span,
+#nav ul li a:hover span{ background-position:right bottom;}
+#nav ul li a.active { font-size:12px; font-weight: bold; color:#887e42; }
 /***** Login *****/
 #login {
     width: 400px;
@@ -52,10 +59,14 @@ ul {
     border: 1px solid #ccc;
 }
 #login form legend{
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    padding: 3px 6px;
     margin-left: 15px;
     color: #666;
-    font-size: 17px;
-    
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #ccc;
 }
 #login form label{
     display: block;
@@ -76,6 +87,12 @@ ul {
     color: #666;
     background: #fff;
     border: 1px solid #ccc;
+}
+#login form input.text:hover, #login form input.yzm:hover {
+    border: 1px solid #e7bd51;
+}
+#login form input.text:focus, #login form input.yzm:focus {
+    border: 1px solid #e7bd51;
 }
 #login form input.yzm {
     width: 160px;
@@ -110,7 +127,10 @@ ul {
 /***** Register *****/
 #reg {
     width: 400px;
-    margin: 15px auto;
+    margin: 50px auto;
+}
+#reg p.tip {
+    margin-left: 10px;
 }
 #reg form {
     border: 1px solid #ccc;
@@ -155,6 +175,12 @@ ul {
     background: #fff;
     float: left;
     border: 1px solid #ccc;
+}
+#reg form input.text:hover, #reg form input.yzm:hover {
+    border: 1px solid #e7bd51;
+}
+#reg form input.text:focus, #reg form input.yzm:focus {
+    border: 1px solid #e7bd51;
 }
 #reg form input.submit {
     width: 50px;

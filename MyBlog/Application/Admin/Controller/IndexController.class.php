@@ -25,9 +25,9 @@ class IndexController extends Controller {
         $Page->setConfig('theme','<div class="right">%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%</div> <div class="left">共%TOTAL_ROW%条记录 第%NOW_PAGE%/%TOTAL_PAGE%页</div>');
         $show = $Page->show();
         $res = $this->post->limit($Page->firstRow.",".$Page->listRows)->select();
-
-        $this->assign('res',$res);
+        $this->assign('cont',$res);
         $this->assign('page',$show);
+        $this->getNav('page_nav', 'nav');
         $this->display();
     }
 
@@ -42,21 +42,28 @@ class IndexController extends Controller {
     public function Nav()
     {
         $this->user->check_login();
+        $this->user->check_per();
+        $this->assign('Nav', 'show');
+        $this->getNav('page', 'res');
+        $this->assign('num', 6);
+        $this->display('Nav');
+    }
+    
+    private function getNav($_page, $_res)
+    {
         $count = $this->nav->count();
         $Page = new \Think\Page($count,6);
         $Page->setConfig('theme','<div class="right">%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%</div> <div class="left">共%TOTAL_ROW%条记录 第%NOW_PAGE%/%TOTAL_PAGE%页</div>');
         $show = $Page->show();
         $res = $this->nav->limit($Page->firstRow.",".$Page->listRows)->select();
-        $this->assign('Nav', 'show');
-        $this->assign('page', $show);
-        $this->assign('num', 6);
-        $this->assign('res', $res);
-        $this->display('Nav');
+        $this->assign($_page, $show);
+        $this->assign($_res, $res);
     }
     
     public function addNav()
     {
         $this->user->check_login();
+        $this->user->check_per();
         if (IS_POST){
             $data = $this->nav->create();
             if ($data) {
@@ -78,6 +85,8 @@ class IndexController extends Controller {
     }
     
     public function updateNav() {
+        $this->user->check_login();
+        $this->user->check_per();
         if ($id = I('get.id')) {
             //修改栏目
             if (IS_POST) {
@@ -111,6 +120,7 @@ class IndexController extends Controller {
     public function Cont()
     {
         $this->user->check_login();
+        $this->user->check_per();
         if (IS_POST) {
             $this->search(I('post.search'));
             exit;
@@ -129,6 +139,7 @@ class IndexController extends Controller {
 
     public function addCont(){
         $this->user->check_login();
+        $this->user->check_per();
         //添加文章
         if (IS_POST) {
             if ($this->post->create()) {
@@ -148,6 +159,8 @@ class IndexController extends Controller {
     }
     
     public function updateCont() {
+        $this->user->check_login();
+        $this->user->check_per();
         if ($id = I('get.id')) {
             //修改文章
             if (IS_POST) {

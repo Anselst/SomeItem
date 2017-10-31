@@ -15,7 +15,7 @@
 <!--/header-->
 <div id="reg">
 	<form class="post" action="__CONTROLLER__/reg_vali" method="post" enctype="multipart/form-data">
-		<legend style="text-align:center">注册一个账号</legend>
+		<legend style="text-align:center">注册游客账号</legend>
 		<input type="hidden" value="reg" name="reg" />
 		<label><input type="text" placeholder="* 用户名" name="username" class="text" required/></label>
 		<label id="tip_user"></label>
@@ -32,6 +32,7 @@
 		<img src="__CONTROLLER__/yzm" alt="" id="yzm"></label>
 		<input type="submit" value="注册" name="send" class="submit" />
 	 </form>
+	<p class="tip"><span>注：本页面注册的账号仅供后台浏览使用，无任何权限。</span></p>
  </div>
 <!---->
 <include file="./Application/Admin/Public/footer.html" />

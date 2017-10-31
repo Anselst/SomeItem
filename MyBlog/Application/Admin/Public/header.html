@@ -4,12 +4,8 @@
     		<h1><a href="#">MyBlog后台管理</a></h1>
     		<div id="nav">
                 <ul>
-                <if condition="HEAD eq '登录'">
-                    <li><a href="__CONTROLLER__/login"><span>登录</span></a></li>
-                <else />
-                	<li><a href="__CONTROLLER__/reg"><span>注册</span></a></li>
-                </if>
-                    <li><a href="__MODULE__/User/one" ><span>游客登入</span></a></li>
+                    <li><a href="__MODULE__/User/login"<php> if ($title=='登录')echo 'class="active"';</php>><span>登录</span></a></li>
+                	<li><a href="__CONTROLLER__/reg"<php> if ($title=='游客注册')echo 'class="active"';</php> ><span>游客注册</span></a></li>
                     <li><a href="__MODULE__/User/bug" ><span>提交BUG</span></a></li>
                     <li><a href="__MODULE__/User/" ><span>联系我</span></a></li>
                 </ul>

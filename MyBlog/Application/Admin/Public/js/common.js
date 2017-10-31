@@ -32,17 +32,18 @@ $(document).ready(function(){
     /**
      * 用户名增加,修改时提示
      */
-    var tip_user = $('#tip_user').val();
-    var tip_psw = $('#tip_psw').val();
-    var tip_np = $('#tip_notpsw').val();
     $("[name='username']").change(function(){
         var un_val = $("[name='username']").val();
         var reg = $('[name="reg"]').val();
         if(un_val.length == 0) {
             $('#tip_user').html('<font color="red">用户名不能为空!</font>');
+            $('[name="send"]').attr('disabled', true);
+            $('[name="send"]').removeClass('submit').addClass("disab");
         } else {
             if(un_val.length < 2 || un_val.length > 10) {
                 $('#tip_user').html('<font color="red">用户名长度不能小于2位或者大于10位!</font>');
+                $('[name="send"]').attr('disabled', true);
+                $('[name="send"]').removeClass('submit').addClass("disab");
             } else if(reg == 'reg') {
                 var url = '/Blog/index.php/Admin/User/ajax_vali_reg';
                 var valu = {'un':un_val};
@@ -73,6 +74,7 @@ $(document).ready(function(){
      */
     $("[name='psw']").change(function(){
         var psw_val = $("[name='psw']").val();
+        var reg = $('[name="reg"]').val();
         if(psw_val.length == 0) {
             $('[name="send"]').attr('disabled', true);
             $('[name="send"]').removeClass('submit').addClass("disab");
@@ -80,9 +82,16 @@ $(document).ready(function(){
         } else {
             if(psw_val.length>5&&psw_val.length<18) {
                 $('#tip_psw').empty();
-                if(($('#tip_user').html()==''||$('#tip_user font').attr('color')=='green')&&$('#tip_psw').val()==''&&$('#tip_notpsw').val()==''){
-                    $('[name="send"]').removeClass('disab').addClass("submit");
-                    $('[name="send"]').removeAttr('disabled');
+                if(reg == 'reg') {
+                    if(($('#tip_user').html()==''||$('#tip_user font').attr('color')=='green')&&$('#tip_psw').val()==''&&$('#tip_notpsw').val()==''){
+                        $('[name="send"]').removeClass('disab').addClass("submit");
+                        $('[name="send"]').removeAttr('disabled');
+                    }
+                } else {
+                    if(($('#tip_user').html()==''||$('#tip_user font').attr('color')=='green')&&$('#tip_psw').val()==''){
+                        $('[name="send"]').removeClass('disab').addClass("submit");
+                        $('[name="send"]').removeAttr('disabled');
+                    }
                 }
             } else {
                 $('[name="send"]').attr('disabled', true);
@@ -118,69 +127,10 @@ $(document).ready(function(){
     });
 
     $('.post').submit(function(){
-        var psw_val = $("[name='psw']").val();
-        var un_val = $("[name='username']").val();
-        var np_val = $("[name='notpsw']").val();
-        //用户名的ajax验证
-        var reg = $('[name="reg"]').val();
-        if(un_val.length == 0) {
-            $('#tip_user').html('<font color="red">用户名不能为空!</font>');
-        } else {
-            if(un_val.length < 2 || un_val.length > 10) {
-                $('#tip_user').html('<font color="red">用户名长度不能小于2位或者大于10位!</font>');
-            } else if(reg == 'reg') {
-                var url = '/Blog/index.php/Admin/User/ajax_vali_reg';
-                var valu = {'un':un_val};
-                $.post(url, valu, function(data){
-                    $('#tip_user').html(data);
-                    if($('#tip_user font').attr('color') == 'red'){
-                        //设置提交按钮不可用,ajax验证后解除
-                        $('[name="send"]').attr('disabled', true);
-                        $('[name="send"]').removeClass('submit').addClass("disab");
-                    } else {
-                        //解除提交按钮限制
-                        $('[name="send"]').removeClass('disab').addClass("submit");                        
-                        $('[name="send"]').removeAttr('disabled');
-                    }
-                });
-            } else {
-                $('#tip_user').empty();
-            }
-        }
-
-        //密码的验证
-        if(psw_val.length == 0) {
-            $('[name="send"]').attr('disabled', true);
-            $('[name="send"]').removeClass('submit').addClass("disab");
-            $('#tip_psw').html('<font color="red">密码不能为空!</font>');
-        } else {
-            if(psw_val.length > 5 && psw_val.length < 18) {
-                $('#tip_psw').empty();
-                $('[name="send"]').removeClass('disab').addClass("submit");
-                $('[name="send"]').removeAttr('disabled');
-            } else {
-                $('[name="send"]').attr('disabled', true);
-                $('[name="send"]').removeClass('submit').addClass("disab");
-                $('#tip_psw').html('<font color="red">密码长度必须大于6位小于18位!</font>');                
-            }
-        }
-
-        //确认密码的验证
-        // var psw_val = $("[name='psw']").val();
-        if(np_val.length == 0) {
-            $('[name="send"]').attr('disabled', true);
-            $('[name="send"]').removeClass('submit').addClass("disab");
-            $('#tip_notpsw').html('<font color="red">确认密码不能为空!</font>');
-        } else {
-            if(np_val != psw_val) {
-                $('[name="send"]').attr('disabled', true);
-                $('[name="send"]').removeClass('submit').addClass("disab");
-                $('#tip_notpsw').html('<font color="red">密码与确认密码必须相同!</font>');
-            } else {
-                $('#tip_notpsw').empty();
-                $('[name="send"]').removeClass('disab').addClass("submit");
-                $('[name="send"]').removeAttr('disabled');          
-            }
+        var n = $('[name="yzm"]').val().length;
+        if(n!=4) {
+            return false;
+            $('[name="yzm"]').focus();
         }
     });
 

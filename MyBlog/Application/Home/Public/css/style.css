@@ -34,11 +34,11 @@ margin-right:2em;
 }
 .top-menu{
 float:left;
-width:30%;
+width:40%;
 margin-top:3.5em;
 }
 .search {
-width: 65%;
+width: 55%;
 position:relative;
 }
 .search form {
@@ -68,7 +68,7 @@ top:23%;
 }
 .top-menu ul {
 margin-top:1em;
-width: 250px;
+/* width: 250px; */
 }
 .top-menu ul li {
 display: inline-block;
