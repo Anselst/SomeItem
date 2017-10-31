@@ -4,7 +4,7 @@
 ## MyBlog
     使用**ThinkPHP**框架实现的一个个人博客。目前还在完善中。
 
-#### 页面与功能展示
+#### 页面展示
 * 博客首页  
 ![](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/front_index.png "index")  
 * 内容页
@@ -13,15 +13,16 @@
 ![images](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/admin_login.png "login")
 * 游客注册
 ![](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/admin_reg.png "register")  
-  - 注册成功的账号只有浏览后台首页的权限，不能进行栏目，博客或用户的增删改功能。
+   - 注册成功的账号只有浏览后台首页的权限，不能进行栏目，博客或用户的增删改功能。  
+   - 超级管理员可以设置游客为管理员。  
 * 后台首页
 ![](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/admin_index.png "index")  
 * 栏目功能页(还未完善)
 ![](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/admin_nav.png "nav")  
 * 博客功能页(还未完善)
-![](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/admin_cont.png "cont")  
+![](https://github.com/Anselst/SomeItem/blob/master/MyBlog/Sample_Pictures/admin_cont.png "cont")  
 
 #### 后续目标
     因为是第一次写的项目，对MVC架构不熟悉，之后会继续学习完善这个项目。  
-    * 增加栏目功能，将博客分类  
-    * 后台栏目，博客排序功能  
+  * 增加栏目功能，将博客分类  
+  * 后台栏目，博客排序功能  
