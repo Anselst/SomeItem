@@ -961,3 +961,53 @@ iframe {
   display: none;
   margin-right: 50%;
 }
+#rotation {
+	width: 669px;
+	padding: 10px 10px 0 10px;
+	border: 1px solid #ccc;
+	margin-bottom: 3em;
+	box-shadow: 5px 5px 5px #ccc;
+	background: #fff;
+	position: relative;
+}
+#rotation a {
+	height: 309px;
+	overflow: hidden;
+	display: inline-block;
+}
+#rotation img {
+	width: 100%;
+	height: 100%;
+}
+#rotation span {
+	padding: 10px 0;
+	padding-left: 15px;
+	font-size: 18px;
+	margin: 0;
+	color: #666;
+	cursor: default;
+	display: inline-block;
+}
+span#tip2, span#tip3 {
+	display: none;
+}
+#img2, #img3 {
+	display: none;
+}
+#rotation ul {
+	display: inline-block;
+	cursor: default;
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+}
+#rotation ul li {
+	display: inline;
+	color: #666;
+	font-size: 3em;
+	line-height: 38px;
+	cursor: pointer;
+}
+#rotation ul li.active {
+	color: #bbb;
+}

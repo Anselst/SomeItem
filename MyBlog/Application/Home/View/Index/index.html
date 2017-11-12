@@ -20,6 +20,19 @@
 		 <div class="content-grids">
 			 <div class="col-md-8 content-main">
 				 <div class="content-grid">
+				 	<div id="rotation">
+				 	<volist name="banner" id="vo">
+				 		<div mid="{$i}">
+			    		<a href=""><img alt="横幅" src="__PUBLIC__/images/post{$i}.jpg"></a>
+			    		<span>{$vo.title}</span>
+			    		</div>
+		    		</volist>
+			     		<ul id="banner-button">
+			     	<volist name="banner" id="vo">
+			     		<li mid="{$i}">·</li>
+		     		</volist>
+			     		</ul>
+			     	</div>
 					<volist name="res" id="vo">
 					<div class="content-grid-info">
 						 <a href="__CONTROLLER__/single?title={$vo.id}"><img src="__PUBLIC__/images/post{$i}.jpg" alt=""/></a>

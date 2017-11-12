@@ -69,7 +69,7 @@ hr {
 }
 .top-menu ul {
     margin-top:1em;
-    width: 250px;
+    width: 400px;
 }
 .top-menu ul li {
     display: inline-block;
@@ -92,9 +92,6 @@ hr {
 .single{
     border-top:1px solid #d2d2d2;
     border-bottom:1px solid #d2d2d2;
-}
-div.login {
-    margin-right: 84px;
 }
 /* **** */
 .col-md-8 {

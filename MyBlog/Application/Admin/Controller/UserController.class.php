@@ -128,13 +128,13 @@ class UserController extends Controller {
     // 登录表单验证
     public function login_vali() {
         $user = D('User');
-        //验证用户名
         if($this->check_yzm(I('post.yzm'))){
+            //验证用户名
             $map['username'] = I('post.username');
-            if($user->where($map)->find()) {
+            $login = $user->where($map)->find();
+            if($login) {
                 //验证密码
-                $map['psw'] = sha1(I('post.psw'));
-                if($login=$user->where($map)->find()) {
+                if($login['psw']==sha1(I('post.psw'))) {
                     session('login',$login['login_id']);
                     $this->success('登陆成功!',U("Index/index"));
                 } else {

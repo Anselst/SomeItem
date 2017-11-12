@@ -1,13 +1,14 @@
 <div id="header">
 	<if condition="(HEAD eq '登录') OR (HEAD eq '注册')">
 		<div id="head">
-    		<h1><a href="#">MyBlog后台管理</a></h1>
+    		<h1><a href="__MODULE__/Index/">MyBlog后台管理</a></h1>
     		<div id="nav">
                 <ul>
                     <li><a href="__MODULE__/User/login"<php> if ($title=='登录')echo 'class="active"';</php>><span>登录</span></a></li>
                 	<li><a href="__CONTROLLER__/reg"<php> if ($title=='游客注册')echo 'class="active"';</php> ><span>游客注册</span></a></li>
                     <li><a href="__MODULE__/User/bug" ><span>提交BUG</span></a></li>
                     <li><a href="__MODULE__/User/" ><span>联系我</span></a></li>
+                    <li><a href="__ROOT__" ><span>博客首页</span></a></li>                    
                 </ul>
             </div>
     	</div>
@@ -15,7 +16,7 @@
         <div class="shell">
             <!-- Logo + Top Nav -->
             <div id="top">
-                <h1><a href="#">SpringTime</a></h1>
+                <h1><a href="__MODULE__/Index/">MyBlog后台管理</a></h1>
                 <div id="top-navigation" >
                     欢迎 <a href="#" ><strong>{$login.username}</strong></a>
                     <span>|</span>
@@ -23,11 +24,12 @@
                     <span>|</span>
                     <a href="__CONTROLLER__/setting">管理设置</a>
                     <span>|</span>
+                    <a href="__ROOT__">博客首页</a>
+                    <span>|</span>
                     <a href="__MODULE__/User/logout">退出</a>
                 </div>
             </div>
             <!-- End Logo + Top Nav -->
-            
             <!-- Main Nav -->
             <div id="navigation">
                 <ul>

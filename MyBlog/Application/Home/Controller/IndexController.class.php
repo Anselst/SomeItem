@@ -15,6 +15,8 @@ class IndexController extends Controller {
     //博客首页,展示文章标题作者和缩略内容
     public function index(){
         $this->show_nav();
+        $ban = $this->post->limit(4)->select();
+        $this->assign('banner', $ban);
         //分页
         $count = $this->post->count();
         $Page = new \Think\Page($count,8);
@@ -35,6 +37,12 @@ class IndexController extends Controller {
         $this->assign('res',$res);
         $this->assign('page',$show);
         $this->display();
+    }
+    
+    private function show_nav()
+    {
+        $res = $this->nav->select();
+        $this->assign('_res', $res);
     }
 
     // 日历ajax
@@ -104,7 +112,7 @@ class IndexController extends Controller {
     
 
     public function test() {
-
+        $this->display();
     }
 
     public function test_ajax(){
@@ -119,6 +127,7 @@ class IndexController extends Controller {
         if (IS_GET) {
             $id = I('get.title');
         }
+        $this->show_nav();
         //从数据库取出文章内容
         $res = $this->post->find($id);
         $map['id'] = $id;
